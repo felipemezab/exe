@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigación inclusiva</title>
+    <link rel="stylesheet" href="../text.css">
+    <link rel="stylesheet" href="style.scss">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+    </style>
+    <script>
+        // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+        
+    </script>
+</head>
+
+<body>
+
+    <div class="menu-wrap">
+        <input type="checkbox" class="checkbox" id="check">
+        <label for="check" class="hamburger"><div></div></label>
+        <div class="left-panel">
+            <ul class="indice">
+                <li><h2>Índice</h2></li>
+                    <a href="#"><li><h3>Capítulo 1: Palabras previas</h3></li></a>
+                    <a href="#"><li>Dedicatoria</li></a>
+                    <a href="#"><li>Agradecimientos</li></a>
+                    <a href="#"><li>Presentación del equipo</li></a>
+                    <a href="#"><li>Prólogo</li></a>
+
+                <a href="#"><li><h3>Capítulo 2: Conceptos previos</h3></li></a>
+                    <a href="#"><li>Diseño centrado en las Personas</li></a>
+                    <a href="#"><li>Co Diseño</li></a>
+                    <a href="#"><li>Investigación Inclusiva</li></a>
+                    <a href="#"><li>Paradigma de la Discapacidad Intelectual</li></a>
+
+                <a href="#"><li><h3>Capítulo 3: De asesores a investigadores</h3></li></a>
+                    <a href="#"><li>Introducción</li></a>
+                    <a href="#"><li>Objetivos</li></a>
+                    <a href="#"><li>Etapa de Preparación</li></a>
+                    <a href="#"><li>Etapa de Exploración</li></a>
+                    <a href="#"><li>Etapa de Ideación</li></a>
+                    <a href="#"><li>Etapa de Validación</li></a>
+
+                <a href="#"><li><h3>Capítulo 4: Resultados</h3></li></a>
+                    <a href="#"><li>Heurísticas</li></a>
+                    <a href="#"><li>Productos</li></a>
+                <a href="#"><li><h3>Capítulo 5: Aprendizaje</h3></li></a>
+            </ul>
+        </div>
+    </div>
+  
+    <div class="header">
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+      </div>
+
+    <ul class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Índice</a></li>
+        <li><a href="#">Capítulo 1</a></li>
+        <li>Investigación inclusiva</li>
+      </ul>
+
+    <article id="contenido">
+        <header class="title">
+            <h1>Investigación Inclusiva</h1>
+        </header>
+        <p>...</p>
+
+    </article>
+
+    <article id="imagenes">
+        <img src="images/iso.png" alt="">
+    </article>
+
+    <footer>
+        <div class="footer">
+            <div class="anterior">
+                <a href="#"><h3>anterior<br>
+                    Paradigma de la Discapacidad Intelectual
+                </h3></a>
+            </div>
+            <div class="siguiente">
+                <a href="#"><h3>siguiente<br>
+                    Capítulo 2: De asesores a investigadores
+                </h3></a>
+            </div>
+        </div>
+        
+    </footer>
+
+</body>
+
+</html>
