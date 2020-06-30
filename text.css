@@ -62,7 +62,9 @@ h1 {
 .anterior {
     padding-left: 6em;
     padding-top: 3em;
-    background-color: #27AE60;
+    background-color: #eaeaea;
+    border-top: solid 2px rgb(165, 165, 165);
+    border-right: solid 1px rgb(165, 165, 165);
     width: 50%;
     transition: ease;
     transition-duration: 0.4s;
@@ -74,7 +76,9 @@ h1 {
 .siguiente {
     padding-left: 6em;
     padding-top: 3em;
-    background-color: #2980B9;
+    background-color: #eaeaea;
+    border-top: solid 2px rgb(165, 165, 165);
+    border-left: solid 1px rgb(165, 165, 165);
     width: 50%;
     transition: ease;
     transition-duration: 0.4s;

@@ -13,15 +13,15 @@
     </style>
     <script>
         // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+        window.onscroll = function () { myFunction() };
 
-function myFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
-}
-        
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+        }
+
     </script>
 </head>
 
@@ -29,57 +29,131 @@ function myFunction() {
 
     <div class="menu-wrap">
         <input type="checkbox" class="checkbox" id="check">
-        <label for="check" class="hamburger"><div></div></label>
+        <label for="check" class="hamburger">
+            <div></div>
+        </label>
         <div class="left-panel">
             <ul class="indice">
-                <li><h2>Índice</h2></li>
-                    <a href="#"><li><h3>Capítulo 1: Palabras previas</h3></li></a>
-                    <a href="#"><li>Dedicatoria</li></a>
-                    <a href="#"><li>Agradecimientos</li></a>
-                    <a href="#"><li>Presentación del equipo</li></a>
-                    <a href="#"><li>Prólogo</li></a>
+                <li>
+                    <h2>Índice</h2>
+                </li>
+                <a href="#">
+                    <li>
+                        <h3>Capítulo 1: Palabras previas</h3>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>Dedicatoria</li>
+                </a>
+                <a href="#">
+                    <li>Agradecimientos</li>
+                </a>
+                <a href="#">
+                    <li>Presentación del equipo</li>
+                </a>
+                <a href="#">
+                    <li>Prólogo</li>
+                </a>
 
-                <a href="#"><li><h3>Capítulo 2: Conceptos previos</h3></li></a>
-                    <a href="#"><li>Diseño centrado en las Personas</li></a>
-                    <a href="#"><li>Co Diseño</li></a>
-                    <a href="#"><li>Investigación Inclusiva</li></a>
-                    <a href="#"><li>Paradigma de la Discapacidad Intelectual</li></a>
+                <a href="#">
+                    <li>
+                        <h3>Capítulo 2: Conceptos previos</h3>
+                    </li>
+                </a>
+                    <a href="diseño-personas.html"><li>Diseño centrado en las Personas</li></a>
+                    <a href="co-diseño.html"><li>Co Diseño</li></a>
+                    <a href="investigacion-inclusiva.html"><li>Investigación Inclusiva</li></a>
+                    <a href="paradigma.html"><li>Paradigma de la Discapacidad Intelectual</li></a>
 
-                <a href="#"><li><h3>Capítulo 3: De asesores a investigadores</h3></li></a>
-                    <a href="#"><li>Introducción</li></a>
-                    <a href="#"><li>Objetivos</li></a>
-                    <a href="#"><li>Etapa de Preparación</li></a>
-                    <a href="#"><li>Etapa de Exploración</li></a>
-                    <a href="#"><li>Etapa de Ideación</li></a>
-                    <a href="#"><li>Etapa de Validación</li></a>
+                <a href="#">
+                    <li>
+                        <h3>Capítulo 3: De asesores a investigadores</h3>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>Introducción</li>
+                </a>
+                <a href="#">
+                    <li>Objetivos</li>
+                </a>
+                <a href="#">
+                    <li>Etapa de Preparación</li>
+                </a>
+                <a href="#">
+                    <li>Etapa de Exploración</li>
+                </a>
+                <a href="#">
+                    <li>Etapa de Ideación</li>
+                </a>
+                <a href="#">
+                    <li>Etapa de Validación</li>
+                </a>
 
-                <a href="#"><li><h3>Capítulo 4: Resultados</h3></li></a>
-                    <a href="#"><li>Heurísticas</li></a>
-                    <a href="#"><li>Productos</li></a>
-                <a href="#"><li><h3>Capítulo 5: Aprendizaje</h3></li></a>
+                <a href="#">
+                    <li>
+                        <h3>Capítulo 4: Resultados</h3>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>Heurísticas</li>
+                </a>
+                <a href="#">
+                    <li>Productos</li>
+                </a>
+                <a href="#">
+                    <li>
+                        <h3>Capítulo 5: Aprendizaje</h3>
+                    </li>
+                </a>
             </ul>
         </div>
     </div>
-  
+
     <div class="header">
         <div class="progress-container">
-          <div class="progress-bar" id="myBar"></div>
+            <div class="progress-bar" id="myBar"></div>
         </div>
-      </div>
+    </div>
 
     <ul class="breadcrumb">
-        <li><a href="#">Home</a></li>
+        <li><a href="../index.html">Home</a></li>
         <li><a href="#">Índice</a></li>
         <li><a href="#">Capítulo 1</a></li>
         <li>Paradigma de la discapacidad intelectual</li>
-      </ul>
+    </ul>
 
     <article id="contenido">
         <header class="title">
             <h1>Paradigma de la Discapacidad Intelectual</h1>
         </header>
-       <p>...</p>
-
+        <p>La Discapacidad Intelectual se puede definir bajo dos miradas.
+            Operativamente, como las limitaciones en el funcionamiento intelectual y en la conducta adaptativa
+            manifestada en las habilidades adaptativas conceptuales, sociales y prácticas, que se manifiesta antes de
+            los 21 años (AAIDD, 2010). De esta definición se desprenden cinco premisas que sustentan el abordaje de la
+            discapacidad intelectual:
+        </p>
+        <p>1. Las limitaciones en el funcionamiento se deben considerar en contextos típicos para la edad y cultura de
+            la persona.</p>
+        <p>2. Al evaluar, se debe tomar en cuenta la diversidad lingüística y cultural; las diferencias en comunicación
+            y aspectos sensoriales, motrices y conductuales.
+        </p>
+        <p>3. Si bien se identifican las limitaciones, las personas poseen capacidades.</p>
+        <p>4. Describir las limitaciones favorece la elaboración de un perfil de necesidades de apoyo.</p>
+        <p>5. Con los apoyos adecuados, la vida de la persona con discapacidad intelectual mejorará. (AAIDD, 2010)</p>
+        <p>Constitutivamente, es decir en su relación con otros constructos, y específicamente bajo un enfoque
+            multidimensional. Comprender así la naturaleza multidimensional de la Discapacidad Intelectual implica que:
+        </p>
+        <p>1. Se reconozcan las inmensas complejidades biológicas y sociales asociadas a la DI (Baumeister, 2005;
+            Switzky y Greenspan, 2005a)</p>
+        <p>2. Captura las características esenciales de una persona con esta discapacidad (Simeonsson, Granlund y
+            Bjorck-Akesson, 2006)</p>
+        <p>3. Establece un marco ecológico (en la conexión entre persona y entorno) para la provisión de apoyos
+            (Thompson y cols., 2009)</p>
+        <p>4. Contar con una base conceptual sólida para diferenciar entre la DI y otras condiciones (Thompson y
+            Wehmeyer, 2008)</p>
+        <p>5. La interacción dinámica y recíproca entre habilidades intelectuales, conducta adaptativa, salud, participación,
+            contexto y los apoyos individualizados (Wehmeyer y cols., 2008)</p>
+        
     </article>
 
     <article id="imagenes">
@@ -89,17 +163,21 @@ function myFunction() {
     <footer>
         <div class="footer">
             <div class="anterior">
-                <a href="#"><h3>anterior<br>
-                    Paradigma de la Discapacidad Intelectual
-                </h3></a>
+                <a href="#">
+                    <h3>anterior<br>
+                        Paradigma de la Discapacidad Intelectual
+                    </h3>
+                </a>
             </div>
             <div class="siguiente">
-                <a href="#"><h3>siguiente<br>
-                    Capítulo 2: De asesores a investigadores
-                </h3></a>
+                <a href="#">
+                    <h3>siguiente<br>
+                        Capítulo 2: De asesores a investigadores
+                    </h3>
+                </a>
             </div>
         </div>
-        
+
     </footer>
 
 </body>
