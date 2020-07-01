@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño centrado en las personas</title>
+    <link rel="stylesheet" href="../text.css">
+    <link rel="stylesheet" href="style.scss">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+    </style>
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function () { myFunction() };
+
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <div class="menu-wrap">
+        <input type="checkbox" class="checkbox" id="check">
+        <label for="check" class="hamburger">
+            <div></div>
+        </label>
+        <div class="left-panel">
+            <ul class="indice">
+                <li>
+                    <h2>Índice</h2>
+                </li>
+                <a href="#">
+                    <li>
+                        <h3>Capítulo 1: Palabras previas</h3>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>Dedicatoria</li>
+                </a>
+                <a href="#">
+                    <li>Agradecimientos</li>
+                </a>
+                <a href="#">
+                    <li>Presentación del equipo</li>
+                </a>
+                <a href="#">
+                    <li>Prólogo</li>
+                </a>
+
+                <a href="#">
+                    <li>
+                        <h3>Capítulo 2: Conceptos previos</h3>
+                    </li>
+                </a>
+                    <a href="diseño-personas.html"><li>Diseño centrado en las Personas</li></a>
+                    <a href="co-diseño.html"><li>Co Diseño</li></a>
+                    <a href="investigacion-inclusiva.html"><li>Investigación Inclusiva</li></a>
+                    <a href="paradigma.html"><li>Paradigma de la Discapacidad Intelectual</li></a>
+
+                <a href="#">
+                    <li>
+                        <h3>Capítulo 3: De asesores a investigadores</h3>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>Introducción</li>
+                </a>
+                <a href="#">
+                    <li>Objetivos</li>
+                </a>
+                <a href="#">
+                    <li>Etapa de Preparación</li>
+                </a>
+                <a href="#">
+                    <li>Etapa de Exploración</li>
+                </a>
+                <a href="#">
+                    <li>Etapa de Ideación</li>
+                </a>
+                <a href="#">
+                    <li>Etapa de Validación</li>
+                </a>
+
+                <a href="#">
+                    <li>
+                        <h3>Capítulo 4: Resultados</h3>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>Heurísticas</li>
+                </a>
+                <a href="#">
+                    <li>Productos</li>
+                </a>
+                <a href="#">
+                    <li>
+                        <h3>Capítulo 5: Aprendizaje</h3>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </div>
+
+    <ul class="breadcrumb">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">Índice</a></li>
+        <li><a href="#">Capítulo 1</a></li>
+        <li>Diseño centrado en las personas</li>
+    </ul>
+
+    <article id="contenido">
+        <header class="title">
+            <h1>Diseño centrado en las Personas</h1>
+        </header>
+        <p>El principio del Diseño para Todos se define como objetivo que todos puedan hacer uso de él; todas las
+            personas, independientemente de su edad, género, capacidades físicas, intelectuales, sensoriales o
+            culturales, puedan utilizar los espacios, productos y servicios. Más allá de una cuestión de inclusión, el
+            Diseño para Todos o “Diseño Universal” se plantea la accesibilidad como las cualidades de los productos,
+            espacios o servicios para no hacer aparecer de discapacidad de las personas cuando se les exige o se supone
+            de ellas capacidades que no tienen. Sin duda, se trata de pensar en un diseño con estándares más altos ya
+            que considera realmente la complejidad de un espectro humano mucho más amplio.</p>
+        <p>El principio del Diseño para Todos se define como objetivo que todos puedan hacer uso de él; todas las
+            personas, independientemente de su edad, género, capacidades físicas, intelectuales, sensoriales o
+            culturales, puedan utilizar los espacios, productos y servicios. Más allá de una cuestión de inclusión, el
+            Diseño para Todos o “Diseño Universal” se plantea la accesibilidad como las cualidades de los productos,
+            espacios o servicios para no hacer aparecer de discapacidad de las personas cuando se les exige o se supone
+            de ellas capacidades que no tienen. Sin duda, se trata de pensar en un diseño con estándares más altos ya
+            que considera realmente la complejidad de un espectro humano mucho más amplio.</p>
+        <p>Inspirados por esta filosofía, el equipo define una serie de características que deben disponer los entornos,
+            espacios y servicios, para dar respuesta satisfactoria al principio del Diseño para Todos, y poder así, ser
+            utilizados por las personas que presentan limitaciones en sus capacidades cognitivas:</p>
+        <p>1. Respetuoso: Cualquier entorno, espacio o edificio, habrá de respetar los derechos inherentes de todos los
+            usuarios que los utilizan. Ninguna persona debe sentirse marginada en su acceso, y al mismo tiempo, éstas
+            podrán hacer uso de los mismos de una forma equitativa, sin que su utilización atente contra su dignidad
+            personal y la igualdad de oportunidades.</p>
+        <p>2. Seguro y Saludable: El acceso, uso y disfrute de cualquier entorno, espacio o edificio, no debe suponer
+            ningún riesgo para los usuarios que los utilizan. Por tanto, todos los elementos que forman parte de un
+            entorno han de estar diseñados teniendo en cuenta la seguridad y salud de las personas que los utilizan.</p>
+        <p>3. Comprensible: Su diseño debe ajustarse a las capacidades de interacción de las personas con dificultades
+            de la comprensión, es decir, con sus específicas capacidades de percepción y procesamiento de la información
+            ambiental disponible.</p>
+        <p>4. Distribución espacial lógica: ha de ser coherente y funcional, para no crear desorientación y confusión.
+            Se debe suministrar información fácil de comprender: utilizar iconos comunes, huyendo de la utilización de
+            palabras complejas o abreviaturas que puedan crear confusión, etc.</p>
+        <p>5. Funcional: Han de estar diseñados de manera que se puedan llevar a término las funciones para las que han
+            sido creados sin ningún problema o dificultad. Es decir, deben permitir una percepción fácil, rápida e
+            inequívoca sobre qué es, cómo se utiliza, y quiénes pueden utilizar esos espacios, entornos o servicios.</p>
+        <p>6. Calidad de Uso El concepto de calidad de uso de los entornos, espacios o servicios, puede definirse como
+            la capacidad de éstos para satisfacer las necesidades, expectativas y las limitaciones de los actores que
+            interactúan con ellos.</p>
+        <p>7. Facilidad de uso: La Orientación y el desplazamiento deben ser simples de entender, sin importar la
+            experiencia previa, los conocimientos, el lenguaje, la capacidad de memorización y concentración o las
+            habilidades de las personas que los utilizan.</p>
+        <p>8. Libre de obstáculos: Cualquier entorno debe estar libre de impedimentos o barreras para la interacción de
+            las personas con el entorno, espacio o servicio. Distinguimos 3 tipos:</p>
+        <p>8.1 Obstáculos Arquitectónicos: impedimentos físicos que impiden o limitan la libertad de movimientos del
+            individuo, bien sea a nivel urbanístico, de edificación o en el transporte. El mobiliario y otros
+            equipamientos también pueden constituir barreras arquitectónicas.</p>
+        <p>8.2 Obstáculos de la comunicación: Todo obstáculo o impedimento que dificulta la expresión o la recepción de
+            mensajes, bien sea a través de medios de comunicación de masas, a través de la señalética, los mensajes de
+            megafonía, o simplemente la comunicación interpersonal.</p>
+        <p>8.3 Obstáculos sociales: actitudes que, directa o indirectamente, por acción u omisión, generan una situación
+            discriminatoria, al obstaculizar que una persona con discapacidad pueda disfrutar de sus derechos en igualdad de
+            condiciones respecto a otra persona en una situación análoga.</p>
+        <p>Las personas que usan un producto o servicio saben lo que necesitan y tienen claros sus objetivos y
+            preferencias; la función del diseñador consiste en buscar estas claridades y diseñar para ellos, asumiendo
+            la función de ayudar al usuario a lograr sus objetivos. Para ello el usuario debería participar en cada
+            etapa del proceso de diseño, convirtiéndose en co creador. Es así que el diseño centrado en el usuario es
+            más bien una disciplina, o un conjunto de ellas, que define una filosofía, antes que un proceso concreto de
+            desarrollo.</p>
+        <p>Los orígenes del concepto de Diseño Centrado en el Usuario se remontan al año 1955 y tiene como raíces los
+            métodos usados en el diseño industrial, la ergonomía y la creencia en que los diseñadores deben tratar de
+            adaptar sus productos a las personas y no al contrario. Hace 45 años la máquina era el fin; la meta
+            consistía en hacer que funcionara controladamente, sin fundirse y sin colapsar. Luego, fue importante que
+            realmente sirviera para algo más allá del ego técnico, esa utilidad se fue refinando hasta que comprendimos
+            que debía ser útil no para algo, sino para alguien. En este punto ya podemos hablar de Diseño Centrado en el
+            Usuario. Ya no era el hombre quien debía adaptarse a la máquina: soportar calor o frío extremo, aprender
+            lenguajes crípticos y robóticos como los hoyos en tarjetas; ahora la máquina se tornaba amigable, sus
+            resultados se hacían legibles, completos, usables y debido a este avance en amigabilidad el otro y yo: los
+            usuarios, pasamos de ser unos cuantos, a ser cientos de millones en redes como Internet. El diseñador
+            Industrial Henry Dreyfuss fue quien popularizó este enfoque a través de su libro de 1955: “Designing for
+            people” y pasaron más de 30 años para que los ingenieros informáticos aplicaran este concepto a sus
+            creaciones, ya que se conformaban con el correcto funcionamiento del dispositivo electrónico. En los años 80
+            comenzó un nuevo terreno de trabajo para los diseñadores denominado “Human Computer Interaction”; gracias al
+            incremento de la memoria en los nuevos computadores, velocidad de procesamiento y colores en los monitores,
+            fueron posibles distintos y novedosos diseños de interfaces y fue a partir de este momento que el diseño de
+            software comenzó a enfocarse en los usuarios y no sólo en las máquinas. El diseñador de interfaces no
+            empieza con imágenes, empieza entendiendo al usuario. Mientras más sepamos de él, mientras más empatía
+            tengamos, podremos diseñar para él de manera más efectiva. (Tidwell, J, Designing Interfaces, O’reilly.
+            2006)</p>
+        <p>Principios
+            El proyecto UsabilityNet (http://www.usabilitynet.org/about/aboutusa.htm) fundado por la Unión Europea
+            destaca los principios básicos de la metodología de diseño centrado en el usuario que pueden ser vistos
+            también como una reformulación de los principios básicos de la ergonomía tradicional:
+        </p>
+        <p>1- Diseño para los usuarios y sus tareas: Los sistemas informáticos interactivos no funcionan de manera
+            aislada - existen para apoyar a los usuarios en realizar sus tareas de trabajo. Un sistema acertado permite
+            cumplir con los objetivos de negocio con interfaces centradas en el usuario orientadas a completar las
+            tareas que este requiera. El desarrollo de los sistemas informáticos deberá considerar siempre las
+            características de sus usuarios, de sus tareas del mundo real, y de su entorno de trabajo. </p>
+        <p>2- Consistencia: Para reducir al mínimo la necesidad de aprender a usar el sistema por parte de los usuarios,
+            es necesario procurar que el comportamiento y apariencia de los elementos comunes de la interfaz y de cajas
+            de diálogo sean tan constantes como sea posible. Esto significa a menudo diseñar basado en los componentes
+            existentes en el sistema operativo. Si la interfaz diseñada difiere en gran medida con el resto del sistema,
+            tomará a los usuarios tiempo y esfuerzo el aprender a utilizarlo. </p>
+        <p>3- Diálogo simple y natural: El diálogo entre el usuario y el sistema debe seguir la secuencia natural
+            implicada por la tarea. No debe haber información presentada al usuario distinta a la necesaria para
+            terminar la tarea actual, porque cada unidad de información inaplicable agrega complejidad al diálogo. Todos
+            los mensajes e instrucciones deben estar en un idioma plano, neutral y deben utilizar el vocabulario de las
+            audiencias previstas. La terminología debe ser definida de modo que el mismo término tenga siempre el mismo
+            significado. </p>
+        <p>4- Reducción del esfuerzo mental del usuario: Los usuarios deben poder concentrarse en su tarea sin
+            preocuparse por la herramienta - la computadora. Mientras más compleja sea la interacción con la
+            computadora, más frustrados estarán los usuarios y se pueden distraer de su tarea verdadera. Si los usuarios
+            tienen que invertir demasiado esfuerzo mental en resolver cómo funciona la computadora, serán menos
+            eficientes y cometerá más errores. Esto es particularmente peligroso en situaciones de seguridad críticas, o
+            donde un negocio se basa en el resultado de una tarea. Simplifique las tareas frecuentes tanto como sea
+            posible. Los usuarios no deben tener que recordar la información de una porción del sistema para utilizar
+            otra parte. Las instrucciones para el uso del sistema deben ser visibles o claramente recuperables siempre
+            que sea necesario. </p>
+        <p>5- Proporcionar realimentación adecuada: Los usuarios necesitan confirmar que sus acciones han sido o no
+            exitosas. Esto es generalmente evidente con un cambio en el aspecto de la ventana, por ejemplo después de
+            terminar una transacción. Los indicadores de progreso o barras de estado brindan al usuario la confianza en
+            que la computadora todavía está funcionando y que simplemente la tarea toma tiempo en ser concluida. Evite
+            presentarle al usuario información innecesaria o inaplicable acerca del diagnóstico o del estado interno del
+            sistema. Los usuarios deben recibir la confirmación de que han funcionado un control con éxito. Por ejemplo,
+            un botón indica inmediatamente cuando ha sido presionado al aparecer hundido momentáneamente, entre otras.
+        </p>
+        <p>6- Proporcionar mecanismos de navegación adecuados: Proporcione información relevante a los usuarios para
+            saber en qué sección se encuentran. Esto puede lograrse generalmente asignando un título a las ventanas, y
+            usando indicadores de localización tales como barras de scroll o numeración en las páginas. Otro mecanismo
+            puede ser el uso de un mapa de navegación, de una descripción, o de una historia de las áreas visitadas (las
+            migajas de pan o breadcrumb). Debe haber rutas claras entre las diversas ventanas o secciones a las que se
+            necesita acceder para ejecutar la tarea que esté realizando. Estas rutas se deben proporcionar en una forma
+            que sea apropiada para el usuario en cada etapa de una tarea. Los usuarios a menudo eligen opciones del
+            sistema por error, para ayudarles en esta situación debe brindárseles una "salida de emergencia claramente
+            marcada" para dejar el estado indeseado sin tener que pasar por un diálogo extendido, por ejemplo
+            proporcionando la opción de deshacer, o un botón de cancelar en las ventanas modales. </p>
+        <p>7- Dejar que el usuario dirija la navegación: El usuario debe poder seleccionar la información que necesitan
+            en una secuencia que sea conveniente para apoyar cada tarea individual. El sistema debe proporcionar de
+            manera clara ayudas para completar la tarea, sobretodo si estas se realizan con frecuencia. </p>
+        <p>8- Presentar información clara: Se sugiere diagramar la información de la pantalla para facilitar al usuario
+            la discriminación entre los diversos contenidos, con el uso de espacios, cajas y técnicas visuales. Sin
+            embargo, hay que tener cuidado de no abrumar al usuario proporcionándole más información de la necesaria
+            para realizar la tarea. Cuando sea apropiado, los contenidos pueden ser ubicados de manera constante a
+            través de diversas ventanas, aumentando el entendimiento de la interfaz. </p>
+        <p>9- El sistema debe ser amigable: En la medida de lo posible, los sistemas deben explicarse a sí mismos para
+            poderlos utilizar con el mínimo de ayuda y de documentación. La información que aparece en las ventanas debe
+            expresarse en términos de la tarea que el usuario realiza en ese momento. Se recomienda la utilización de
+            los textos alternos (tool tips) para los botones etiquetados con un ícono. La ayuda en línea proporcionada
+            debe relacionarse con el contexto específico de la interacción en la ventana, orientada a la función y
+            enumerando los pasos concretos que se realizarán. </p>
+        <p>10- Reducir el número de errores: Los errores pueden reducirse dirigiendo al usuario por la ruta correcta
+            para lograr su meta. Cuando sea apropiado a la tarea, deben brindársele a los usuarios, opciones que exijan
+            una respuesta para evitar errores o imprecisiones (debe aplicarse sin que limite la realización normal de
+            sus tareas). El sistema debe validar el ingreso de datos tan cerca al punto de entrada como sea posible. Los
+            mensajes de error se deben expresar en lenguaje plano y neutral evitando el uso de códigos técnicos, a no
+            ser que sea necesario para indicar el problema de manera exacta, y deben sugerir una solución. Sobretodo,
+            los mensajes de error se deben expresar en términos que eviten el sentimiento de culpa en el usuario.</p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+
+    </article>
+
+    <article id="imagenes">
+        <img src="images/iso.png" alt="">
+    </article>
+
+    <footer>
+        <div class="footer">
+            <div class="anterior">
+                <a href="#">
+                    <h3>anterior<br>
+                        Paradigma de la Discapacidad Intelectual
+                    </h3>
+                </a>
+            </div>
+            <div class="siguiente">
+                <a href="#">
+                    <h3>siguiente<br>
+                        Capítulo 2: De asesores a investigadores
+                    </h3>
+                </a>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

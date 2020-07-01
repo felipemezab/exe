@@ -1,0 +1,225 @@
+/*Panel desplegable: https://www.youtube.com/watch?v=lB46vlLi0EY*/
+/*Scroll indicator: https://www.w3schools.com/howto/howto_js_scroll_indicator.asp*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Lora, sans;
+    overflow: auto;
+}
+body::-webkit-scrollbar {
+    display:;
+}
+article {
+    display: block;
+    font-size: 20px;
+    line-height: 29px;
+}
+header.title {
+    margin: 20vh 0;
+    max-width: 35em;
+    margin-left: 4em;
+    margin-right: auto;
+}
+article > * {
+    max-width: 35em;
+    margin-left: 4em;
+    margin-right: auto;
+}
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+h1 {
+    padding: 1em 0;
+    color: #d35400;
+    font-size: 50px;
+}
+h2 {
+    font-size: 32px;
+    color: #000;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.checkbox {
+    display: none;
+}
+.checkbox:checked ~ .left-panel {
+    right: 0;
+}
+.left-panel {
+    background-color: #eaeaea;
+    position: fixed;
+    right: -30em;
+    top: 0;
+    width: 30em; 
+    height: 100%;
+    transition: 0.4s;
+    padding:  3em 5em;
+    z-index: 10;
+    overflow: auto;
+}
+
+
+.hamburger {
+    position: fixed;
+    background-color: #D35400;
+    top: 26px;
+    right: 26px;
+    z-index: 5;
+    width: 3em;
+    height: 3em;
+    padding: 3px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 12;
+}
+
+
+  /* Hamburger Line */
+  .menu-wrap .hamburger > div {
+    position: absolute;
+    top: 20px;
+    flex: none;
+    width: 2em;
+    height: 4px;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+    z-index: 12;
+    cursor: pointer;
+  }
+  
+  
+  /* Hamburger Lines - Top & Bottom */
+  .menu-wrap .hamburger > div::before,
+  .menu-wrap .hamburger > div::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 4px;
+    background: inherit;
+  }
+  
+  /* Moves Line Down */
+  .menu-wrap .hamburger > div::after {
+    top: 10px;
+  }
+  
+  /* Toggler Animation */
+  .menu-wrap .checkbox:checked + .hamburger > div {
+    transform: rotate(135deg);
+  }
+  
+  /* Turns Lines Into X */
+  .menu-wrap .checkbox:checked + .hamburger > div:before,
+  .menu-wrap .checkbox:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  
+  /* Rotate On Hover When Checked */
+  .menu-wrap .checkbox:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+
+}
+ul.indice li {
+    list-style: none;
+    color: #000;
+    margin: 8px 0;
+}
+ul.indice li:hover {
+  color: #D35400;
+  text-decoration: #D35400 underline;
+}
+ul.indice a {
+    text-decoration: none;
+}
+ul.indice h3 {
+  color: #d35400;
+  padding-top: 12px;
+}
+
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    padding: 10px 4em;
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #d35400;
+    color: #fff;
+  }
+  
+  /* Style the active/current link*/
+  
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+  .header-right a {
+      margin: 0 1em;
+  }
+  
+ 
+/*CSS de las tarjetas*/
+.container {
+  padding-top: 10em;
+  margin: 0 1em;
+}
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 6em 0;
+}
+.element {
+  width: 308px;
+  height: 450px;
+  background-color: #f3f3f3;
+  border: 1px solid #c9c9c9;
+  border-radius: 10px;
+  margin: 0 10px;
+  transition: ease;
+  transition-duration: 0.2s;
+  padding: 2em;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(185, 185, 185, 0.25);
+}
+.element:hover {
+  width: 346px;
+  height: 430px;
+  margin: 0 10px;
+  border-radius: 10px;
+  border: 1px solid #c9c9c9;
+  color: #fff;
+  background-color: #2c3e50;
+}
+

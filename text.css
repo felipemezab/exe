@@ -1,0 +1,273 @@
+/*Panel desplegable: https://www.youtube.com/watch?v=lB46vlLi0EY*/
+/*Scroll indicator: https://www.w3schools.com/howto/howto_js_scroll_indicator.asp*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Lora, sans;
+    padding: calc(0.5rem + 3vh)
+        calc(0.5rem + 4vw);
+       padding-top: calc(0.5rem + 3vh); 
+       padding-right: calc(0.5rem + 4vw);
+       padding-bottom: calc(0.5rem + 3vh);
+       padding-left: calc(0.5rem + 4vw);
+    margin: 0 90px;   
+    overflow: auto;
+}
+body::-webkit-scrollbar {
+    display:;
+}
+
+
+
+
+article {
+    display: block;
+    font-size: 20px;
+    line-height: 29px;
+}
+header.title {
+    margin: 20vh 0;
+    max-width: 35em;
+    margin-left: 4em;
+    margin-right: auto;
+}
+article > * {
+    max-width: 35em;
+    margin-left: 4em;
+    margin-right: auto;
+}
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+h1 {
+    padding-top: 1em;
+    color: #d35400;
+}
+
+
+
+.footer {
+    position: absolute;
+    right: 0;
+    left: 0;
+    display: flex;
+    height: 50vh;
+    justify-content: space-evenly;
+    margin-top: 10em;
+}
+.anterior {
+    padding-left: 6em;
+    padding-top: 3em;
+    background-color: #eaeaea;
+    border-top: solid 2px rgb(165, 165, 165);
+    border-right: solid 1px rgb(165, 165, 165);
+    width: 50%;
+    transition: ease;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.anterior:hover, .siguiente:hover {
+    width: 70%;
+}
+.siguiente {
+    padding-left: 6em;
+    padding-top: 3em;
+    background-color: #eaeaea;
+    border-top: solid 2px rgb(165, 165, 165);
+    border-left: solid 1px rgb(165, 165, 165);
+    width: 50%;
+    transition: ease;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.footer a {
+    color: #fff;
+}
+
+img {
+  padding: 6em 0;
+}
+
+
+
+
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #fff;
+    margin: 0 4em;
+    font-family: 'Lato';
+    position: absolute;
+    padding-top: 2em;
+    top: 0;
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 16px;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+    color: #d35400;
+    text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
+
+
+  .checkbox {
+    display: none;
+}
+.checkbox:checked ~ .left-panel {
+    right: 0;
+}
+.left-panel {
+    background-color: #eaeaea;
+    position: fixed;
+    right: -30em;
+    top: 0;
+    width: 30em; 
+    height: 100%;
+    transition: 0.4s;
+    padding:  3em 5em;
+    z-index: 10;
+    overflow: auto;
+}
+
+
+.hamburger {
+    position: fixed;
+    background-color: #D35400;
+    top: 26px;
+    right: 26px;
+    z-index: 5;
+    width: 3em;
+    height: 3em;
+    padding: 3px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 12;
+}
+
+
+  /* Hamburger Line */
+  .menu-wrap .hamburger > div {
+    position: absolute;
+    top: 20px;
+    flex: none;
+    width: 2em;
+    height: 4px;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+    z-index: 12;
+    cursor: pointer;
+  }
+  
+  
+  /* Hamburger Lines - Top & Bottom */
+  .menu-wrap .hamburger > div::before,
+  .menu-wrap .hamburger > div::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 4px;
+    background: inherit;
+  }
+  
+  /* Moves Line Down */
+  .menu-wrap .hamburger > div::after {
+    top: 10px;
+  }
+  
+  /* Toggler Animation */
+  .menu-wrap .checkbox:checked + .hamburger > div {
+    transform: rotate(135deg);
+  }
+  
+  /* Turns Lines Into X */
+  .menu-wrap .checkbox:checked + .hamburger > div:before,
+  .menu-wrap .checkbox:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  
+  /* Rotate On Hover When Checked */
+  .menu-wrap .checkbox:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+
+}
+ul.indice li {
+    list-style: none;
+    color: #000;
+    margin: 8px 0;
+}
+ul.indice li:hover {
+  color: #D35400;
+  text-decoration: #D35400 underline;
+}
+ul.indice a {
+    text-decoration: none;
+}
+ul.indice h3 {
+  color: #d35400;
+  padding-top: 12px;
+}
+
+/* Style the header: fixed position (always stay at the top) */
+.header {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #eeeeee;
+  height: 3em;
+  display: flex;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 12px;
+  background: #ccc;
+  margin: auto 1em;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 12px;
+  background: #d35400;
+  width: 0%;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+img {
+  width: 1500px;
+  margin-left: -10em;
+  
+}
