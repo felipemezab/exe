@@ -152,6 +152,7 @@ ul.indice h3 {
 .header {
     overflow: hidden;
     padding: 10px 4em;
+    margin-top: 1em;
   }
   
   /* Style the header links */
@@ -183,7 +184,8 @@ ul.indice h3 {
   
   /* Float the link section to the right */
   .header-right {
-    float: right;
+    float: left;
+    margin-left: 3em;
   }
   .header-right a {
       margin: 0 1em;
@@ -214,8 +216,8 @@ ul.indice h3 {
   box-shadow: 0 4px 10px rgba(185, 185, 185, 0.25);
 }
 .element:hover {
-  width: 346px;
-  height: 430px;
+  width: 370px;
+  height: 500px;
   margin: 0 10px;
   border-radius: 10px;
   border: 1px solid #c9c9c9;
