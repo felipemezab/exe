@@ -263,7 +263,10 @@ ul.indice h3 {
   align-items: center;
   justify-content: center;
 }
-
+ol.content-list {
+  padding-left: 3em;
+  padding-bottom: 2em;
+}
 
 
 img {
