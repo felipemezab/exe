@@ -29,7 +29,8 @@ article {
     line-height: 29px;
 }
 header.title {
-    margin: 20vh 0;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
     max-width: 35em;
     margin-left: 4em;
     margin-right: auto;
@@ -265,7 +266,7 @@ ul.indice h3 {
 }
 ol.content-list {
   padding-left: 3em;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
 }
 
 
