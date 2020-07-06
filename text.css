@@ -278,10 +278,12 @@ ol.content-list {
 .images {
   padding-top: 2em;
   padding-bottom: 5em;
+  display: block;
+  margin: 0 -90px;
 }
 img {
-  width: 1500px;
-  margin-left: -10em;
+  width: 100%;
+  max-width: 1900px;
 }
 
 /* superíndice */
@@ -298,13 +300,16 @@ a.sup-indice:hover {
 .side-an {
   position: absolute;
   right: 10em;
-  top: 55em;
+  top: 28em;
   z-index: -1;
+}
+.side-an p {
+  padding: 1em 0;
 }
 .side-indice {
   font-family: 'Lato';
-  font-size: 18px;
+  font-size: 15px;
   color: #d35400;
   max-width: 15em;
 }
-#note1 {padding-bottom: 8em;}
+#note1 {padding-bottom: 38em;}
