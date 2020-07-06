@@ -307,9 +307,10 @@ a.sup-indice:hover {
   padding: 1em 0;
 }
 .side-indice {
-  font-family: 'Lato';
+  font-family: 'Lora';
+  font-style: italic;
   font-size: 15px;
   color: #d35400;
   max-width: 15em;
 }
-#note1 {padding-bottom: 38em;}
+#note1 {padding-bottom: 36em;}
