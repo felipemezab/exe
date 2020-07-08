@@ -22,15 +22,14 @@ article {
   height: 100%;
 }
 header.title {
-    margin: 20vh 0;
-    max-width: 35em;
+    margin: 12vh 0;
+    max-width: 100%;
     margin-left: 4em;
     margin-right: auto;
 }
 article > * {
-    max-width: 35em;
+    max-width: 100%;
     margin-left: 4em;
-    margin-right: auto;
 }
 p {
     margin-top: 1em;
@@ -39,15 +38,21 @@ p {
 h1 {
     padding: 1em 0;
     color: #d35400;
-    font-size: 50px;
+    font-size: 70px;
+    font-family: 'Lato';
 }
 h2 {
-    font-size: 32px;
+    font-size: 36px;
     color: #000;
     font-weight: 400;
-    font-style: italic;
     line-height: 40px;
     cursor: pointer;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 32px;
 }
 
 .checkbox {
@@ -157,7 +162,7 @@ ul.indice h3 {
 .header {
     overflow: hidden;
     padding: 10px 4em;
-    padding-top: 1em;
+    padding-top: 25px;
   }
   
   /* Style the header links */
@@ -207,4 +212,64 @@ ul.indice h3 {
 }
 .text strong {
   color: #D35400;
+}
+.text a {
+  text-decoration: none;
+  color: #d35400;
+}
+
+ol.home-list {
+  list-style: none;
+  font-size: 28px;
+  padding: 1em 0;
+}
+ol.home-list a {
+  text-decoration: none;
+  color: #000;
+}
+ol.home-list a:hover {
+  color: #D35400;
+}
+ol.home-list li {
+  padding: 8px 0;
+}
+
+
+
+.button {
+  border-radius: 4px;
+  background-color: #d35400;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 270px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
