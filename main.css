@@ -293,3 +293,12 @@ img.cubo {
   justify-content: center;
   align-content: center;
 }
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #d35400;
+  height: 10em;
+}
