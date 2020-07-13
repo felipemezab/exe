@@ -16,48 +16,51 @@ body {
     margin: 0 90px;   
     overflow: auto;
 }
-body::-webkit-scrollbar {
-    display:;
-}
-
-
-
 
 article {
-    display: grid;
-    grid-template-columns: 70% 30%;
-    font-size: 20px;
-    line-height: 29px;
+    width: 70%;
+    position: relative;
+    max-width: 45em;
+    padding-left: 5em;
 }
-.column {
-  padding-bottom: 5em;
+article p {
+  font-size: 19px;
+  line-height: 27px;
 }
-.notes {
-  padding-top: 13em;
-}
-.notes p {
-  font-size: 18px;
-  color: #d35400;
+span.sidenote__content {
+  position: absolute;
+  display: block;
+  left: calc(100% + 220px);
+  width: 30%;
+  margin-top: -1.2rem;
+  color: #D35400;
   font-family: 'Lato';
-  line-height: 26px;
+  font-size: 17px;
+  font-weight: 400;
 }
+a.sidenote {
+  color: #d35400;
+  text-decoration: none;
+  font-family: 'Lato';
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
 header.title {
     margin-top: 20vh;
     margin-bottom: 10vh;
     max-width: 35em;
     margin-right: auto;
 }
-article > * {
-    max-width: 35em;
-    margin-left: 4em;
-    margin-right: auto;
-}
+
 p {
     margin-top: 1em;
     margin-bottom: 1em;
 }
 h1 {
     padding-top: 1em;
+    font-size: 30px;
     color: #d35400;
 }
 h2 {
@@ -75,7 +78,9 @@ h5 {
   padding-bottom: 2em;
 }
 
+.header {
 
+}
 .footer {
     position: absolute;
     right: 0;
@@ -115,39 +120,6 @@ h5 {
     color: #fff;
 }
 
-
-/* Style the header with a grey background and some padding */
-.header-1 {
-  overflow: hidden;
-  padding: 10px 4em;
-  margin-top: -1em;
-  margin-left: -10em;
-}
-
-/* Style the header links */
-.header-1 a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
-}
-
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-.header-1 a.logo {
-  font-size: 28px;
-  font-family: 'Lato';
-  font-weight: bold;
-}
-
-/* Change the background color on mouse-over */
-.header-1 a:hover {
-  background-color: #192a56;
-  color: #fff;
-}
 
 
 
@@ -304,6 +276,7 @@ ul.indice h3 {
   background-color: #eeeeee;
   height: 3em;
   display: flex;
+  z-index: 2;
 }
 
 /* The progress container (grey background) */
@@ -342,39 +315,4 @@ img {
   width: 100%;
   max-width: 1900px;
 }
-
-/* superíndice */
-
-a.sup-indice {
-  text-decoration: none;
-  color: #d35400;
-  font-family: 'Lato';
-  line-height: 0;
-}
-
-.side-an p {
-  padding: 1em 0;
-}
-.side-indice {
-  font-family: 'Lora';
-  font-style: italic;
-  font-size: 15px;
-  color: #d35400;
-  max-width: 15em;
-}
-
-
-.notes p:nth-child(1) {padding-top: 7em;}
-.notes p:nth-child(3) {padding-top: 32em;}
-.notes p:nth-child(4) {padding-top: 19em;}
-.notes p:nth-child(12) {padding-top: 10em;}
-.notes p:nth-child(13) {padding-top: 14em;}
-.notes p:nth-child(14) {padding-top: 13em;}
-.notes p:nth-child(15) {padding-top: 7em;}
-.notes p:nth-child(17) {padding-top: 5em;}
-.notes p:nth-child(21) {padding-top: 15em;}
-.notes p:nth-child(23) {padding-top: 11em;}
-.notes p:nth-child(24) {padding-top: 15em;}
-.notes p:nth-child(26) {padding-top: 15em;}
-.notes p:nth-child(27) {padding-top: 41em;}
 
