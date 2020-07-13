@@ -6,14 +6,10 @@
     box-sizing: border-box;
 }
 body {
-    font-family: Lora, sans;
+    font-family: 'Lato';
     overflow: auto;
     height: 100vh;
-    scroll-snap-type: mandatory;
     overflow-y: scroll;
-}
-body::-webkit-scrollbar {
-    display:;
 }
 article {
     display: block;
@@ -22,7 +18,11 @@ article {
 }
 #section {
   height: 100%;
-  scroll-snap-align: start;
+}
+.section-1 {
+  
+}
+
 }
 header.title {
     margin: 12vh 0;
@@ -41,18 +41,18 @@ p {
     line-height: 32px;
 }
 h1 {
-    padding: 1em 0;
-    color: #d35400;
-    font-size: 70px;
-    font-family: 'Lora';
+    padding: 1em 0 0 0;
+    color: #000;
+    font-size: 58px;
 }
 h2 {
-    font-size: 36px;
+    font-size: 32px;
     color: #000;
     font-weight: 400;
     line-height: 40px;
     cursor: pointer;
     padding-bottom: 2em;
+    padding-top: 1em;
 }
 h3 {
   font-size: 18px;
@@ -79,7 +79,9 @@ h4 {
     z-index: 10;
     overflow: auto;
 }
-
+header {
+  padding-left: 4em;
+}
 
 .hamburger {
     position: fixed;
@@ -175,7 +177,7 @@ ul.indice h3 {
   /* Style the header links */
   .header a {
     float: left;
-    color: black;
+    color: #000;
     text-align: center;
     padding: 12px;
     text-decoration: none;
@@ -193,7 +195,7 @@ ul.indice h3 {
   
   /* Change the background color on mouse-over */
   .header a:hover {
-    background-color: #192a56;
+    background-color: #f1bc0f;
     color: #fff;
   }
   
@@ -245,7 +247,7 @@ ol.home-list li {
 
 .button {
   border-radius: 4px;
-  background-color: #d35400;
+  background-color: #f1bc0f;
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -300,4 +302,19 @@ footer {
   width: 100%;
   background-color: #d35400;
   height: 10em;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  
+
+}
+.home-img {
+  position: absolute;
+  width: 65%;
+  opacity: 100%;
+  z-index: ;w
 }
