@@ -9,31 +9,8 @@ body {
     font-family: 'Lato';
     overflow: auto;
     height: 100vh;
-    overflow-y: scroll;
-}
-article {
-    display: block;
-    font-size: 20px;
-    line-height: 29px;
-}
-#section {
-  height: 100%;
-}
-.section-1 {
-  
 }
 
-}
-header.title {
-    margin: 12vh 0;
-    max-width: 100%;
-    margin-left: 4em;
-    margin-right: auto;
-}
-article > * {
-    max-width: 100%;
-    margin-left: 4em;
-}
 p {
     margin-top: 1em;
     margin-bottom: 1em;
@@ -60,249 +37,70 @@ h3 {
 h4 {
   font-size: 32px;
 }
-
-.checkbox {
-    display: none;
-}
-.checkbox:checked ~ .left-panel {
-    right: 0;
-}
-.left-panel {
-    background-color: #eaeaea;
-    position: fixed;
-    right: -30em;
-    top: 0;
-    width: 30em; 
-    height: 100%;
-    transition: 0.4s;
-    padding:  3em 5em;
-    z-index: 10;
-    overflow: auto;
-}
-header {
-  padding-left: 4em;
-}
-
-.hamburger {
-    position: fixed;
-    background-color: transparent;
-    top: 26px;
-    right: 60px;
-    z-index: 5;
-    width: 3em;
-    height: 3em;
-    padding: 3px 8px;
-    cursor: pointer;
-    z-index: 12;
-    display: ; /*borrar para mostrar el incono del menú*/
-}
-
-
-  /* Hamburger Line */
-  .menu-wrap .hamburger > div {
-    position: absolute;
-    top: 22px;
-    flex: none;
-    width: 36px;
-    height: 4px;
-    background: #192a56;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s ease;
-    z-index: 12;
-    cursor: pointer;
-    border-radius: 3px;
-  }
   
-  
-  /* Hamburger Lines - Top & Bottom */
-  .menu-wrap .hamburger > div::before,
-  .menu-wrap .hamburger > div::after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: -10px;
-    width: 100%;
-    height: 4px;
-    background: inherit;
-    border-radius: 3px;
-  }
-  
-  /* Moves Line Down */
-  .menu-wrap .hamburger > div::after {
-    top: 10px;
-  }
-  
-  /* Toggler Animation */
-  .menu-wrap .checkbox:checked + .hamburger > div {
-    transform: rotate(135deg);
-  }
-  
-  /* Turns Lines Into X */
-  .menu-wrap .checkbox:checked + .hamburger > div:before,
-  .menu-wrap .checkbox:checked + .hamburger > div:after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-  
-  /* Rotate On Hover When Checked */
-  .menu-wrap .checkbox:checked:hover + .hamburger > div {
-    transform: rotate(225deg);
 
-}
-ul.indice li {
-    list-style: none;
-    color: #000;
-    margin: 8px 0;
-}
-ul.indice li:hover {
-  color: #D35400;
-  text-decoration: #D35400 underline;
-}
-ul.indice a {
-    text-decoration: none;
-}
-ul.indice h3 {
-  color: #d35400;
-  padding-top: 12px;
-}
+/*Header responsive*/
 
-/* Style the header with a grey background and some padding */
+.container {
+  width: 85%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 .header {
-    overflow: hidden;
-    padding: 10px 4em;
-    padding-top: 25px;
-  }
-  
-  /* Style the header links */
-  .header a {
-    float: left;
-    color: #000;
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
-  }
-  
-  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-  .header a.logo {
-    font-size: 28px;
-    font-family: 'Lato';
-    font-weight: bold;
-  }
-  
-  /* Change the background color on mouse-over */
-  .header a:hover {
-    background-color: #f1bc0f;
-    color: #fff;
-  }
-  
-  
-  /* Float the link section to the right */
-  .header-right {
-    float: left;
-    margin-left: 3em;
-  }
-  .header-right a {
-      margin: 0 1em;
-      font-family: 'Lato';
-  }
-  
-.grid {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  height: 100%;
+  padding: 2em 0;
+  background-color: #fff;
+  z-index: 11;
 }
-.text {
-  padding: 4em 3em;
-  font-size: 26px;
-}
-.text strong {
-  color: #D35400;
-}
-.text a {
+.header a {
   text-decoration: none;
-  color: #d35400;
+}
+.logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #000;
+  z-index: 12;
+}
+.navigation ul {
+  margin: 0;
+  padding-left: 5em;
+  list-style: none;
+}
+.navigation ul li {
+  display: inline-block;
+  padding: 0 12px;
+}
+.navigation ul li a {
+  display: block;
+  padding: 1em 0.5em;
+  color: #000;
+  font-size: 18px;
+}
+.navigation ul li a:hover {
+  color: #fff;
+  background-color: #d35400;
+  border-radius: 10px;
 }
 
-ol.home-list {
+.navigation-panel ul {
   list-style: none;
-  font-size: 28px;
-  padding: 1em 0;
+  font-size: 18px;
 }
-ol.home-list a {
+.navigation-panel ul li {
+  display: block;
+  padding: 6px 0;
+}
+.navigation-panel ul li a {
   text-decoration: none;
   color: #000;
-}
-ol.home-list a:hover {
-  color: #D35400;
-}
-ol.home-list li {
-  padding: 8px 0;
+
 }
 
-
-
-.button {
-  border-radius: 4px;
-  background-color: #f1bc0f;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 270px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-img.cubo {
-  width:;
-  display: block;
-  margin: auto;
-}
-.ilustration {
-  width: 85%;
-  height: 85%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: #d35400;
-  height: 10em;
-}
 
 .flex {
   display: flex;
@@ -314,7 +112,57 @@ footer {
 }
 .home-img {
   position: absolute;
-  width: 65%;
+  width: 67%;
   opacity: 100%;
   z-index: ;w
+}
+
+label:after {
+  content: '\26A1';
+}
+.menu-wrap  {
+  position: absolute;
+  right: 3em;
+  top: 2.2em;
+  display: none;
+}
+.menu-wrap .hamburger {
+  cursor: pointer;
+}
+.checkbox {
+  display: none;
+}
+.checkbox:checked ~ .panel {
+  top: 5em;
+}
+.panel {
+  background-color: #fff;
+    position: fixed;
+    right: 0;
+    top: -15em;
+    width: 100%; 
+    height: 40%;
+    transition: 0.4s;
+    padding:  1em 3em;
+    z-index: -1;
+    overflow: auto;
+}
+.imagen {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 80%;
+}
+img {
+  max-width: 70%;
+  height: auto;
+}
+
+@media only screen and (max-width: 877px) {
+  .navigation {
+    display: none;
+  }
+  .menu-wrap {
+    display: block;
+  }
 }
