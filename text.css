@@ -233,7 +233,7 @@ ul.indice h3 {
 }
 
 /* Style the header: fixed position (always stay at the top) */
-.header {
+.scroll-indicator {
   position: fixed;
   bottom: 0;
   left: 0;
