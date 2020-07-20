@@ -12,7 +12,7 @@ body {
        padding-top: calc(0.5rem + 3vh); 
        padding-right: calc(0.5rem + 4vw);
        padding-bottom: calc(0.5rem + 3vh);
-       padding-left: calc(0.5rem + 4vw);
+       padding-left: calc(1rem + 4vw);
     margin: 0 90px;   
     overflow: auto;
 }
@@ -22,7 +22,6 @@ article {
     position: relative;
     max-width: 45em;
     min-width: 35em;
-    padding-left: 5em;
     padding-bottom: 4em;
 }
 article p {
@@ -32,7 +31,7 @@ article p {
 span.sidenote__content {
   position: absolute;
   display: block;
-  left: calc(100% + 220px);
+  left: calc(90% + 150px);
   width: 30%;
   margin-top: -1.2rem;
   padding: 0;
@@ -91,10 +90,10 @@ h6 {
 
 /* Style the list */
 ul.breadcrumb {
-    padding: 10px 30px;
+    padding-top: 10px;
     list-style: none;
     background-color: #fff;
-    margin: 6px 4em;
+    margin-top: 6px;
     font-family: 'Lato';
     position: absolute;
     padding-top: 2em;
@@ -346,4 +345,12 @@ ol.content-content-list {
 .button_left:hover span:after {
   opacity: 1;
   left: 0;
+}
+
+
+
+@media only screen and (max-widht: 900px) {
+  body {
+    background-color: aqua;
+  }
 }

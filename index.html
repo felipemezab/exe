@@ -9,41 +9,37 @@
     <link rel="stylesheet" href="style.scss">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
 </head>
 
 <body>
 
-        <div class="menu-wrap">
-            <input type="checkbox" class="checkbox" id="check">
-            <label for="check" class="hamburger"></label>
-            <div class="panel">
-                <nav class="navigation-panel">
-                    <ul>
-                        <li><a href="pages/descarga.html">Descarga</a></li>
-                        <li><a href="index/cap-1/inicio-cap-1.html">Ir al libro</a></li>
-                        <li><a href="pages/nosotros.html">Nosotros</a></li>
-                        <li><a href="pages/contacto.html">Contacto</a></li>
-                        <li><a href="#">Proyecto ExE</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-
-        <div class="header">
-            <div class="container logo-nav-container">
-                <a href="#" class="logo">E&times;E</a>
-                <nav class="navigation">
-                    <ul>
-                        <li><a href="pages/descarga.html">Descarga</a></li>
-                        <li><a href="index/cap-1/inicio-cap-1.html">Ir al libro</a></li>
-                        <li><a href="pages/nosotros.html">Nosotros</a></li>
-                        <li><a href="pages/contacto.html">Contacto</a></li>
-                        <li><a href="#">Proyecto ExE</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">E&times;E</a>
+            <a href="index/cap-1/inicio-cap-1.html">Ir al libro</a>
+            <a href="pages/descarga.html">Descarga</a>
+            <a href="pages/nosotros.html">Nosotros</a>
+            <a href="pages/contacto.html">Contacto</a>
+            <a href="#about">Proyecto Exe</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          
+          <div style="padding-left:16px">
+            
+          </div>
 
     <div class="imagen">
         <img src="images/ilustración-home.svg" alt="">
