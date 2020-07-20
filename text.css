@@ -21,6 +21,7 @@ article {
     width: 70%;
     position: relative;
     max-width: 45em;
+    min-width: 35em;
     padding-left: 5em;
     padding-bottom: 4em;
 }
@@ -126,7 +127,7 @@ ul.breadcrumb {
   }
 
 
-  .checkbox {
+.checkbox {
     display: none;
 }
 .checkbox:checked ~ .left-panel {
@@ -144,8 +145,6 @@ ul.breadcrumb {
     z-index: 10;
     overflow: auto;
 }
-
-
 .hamburger {
     position: fixed;
     background-color: transparent;
@@ -216,15 +215,17 @@ ul.indice {
   padding-bottom: 3em;
 }
 ul.indice li {
-    list-style: none;
-    color: #000;
-    margin: 8px 0;
+  list-style: none;
+  margin: 8px 0;
 }
-ul.indice li:hover {
+ul.indice li a {
+    color: #000;
+}
+ul.indice li a:hover {
   color: #D35400;
   text-decoration: #D35400 underline;
 }
-ul.indice a {
+ul.indice li a {
     text-decoration: none;
 }
 ul.indice h3 {
@@ -273,12 +274,9 @@ ol.content-content-list {
 .images {
   padding-top: 5em;
   padding-bottom: 3em;
-  display: block;
-  margin: 0 -90px;
 }
-img {
-  width: 100%;
-  max-width: 1900px;
+.images img {
+  width: 60vw;
 }
 
 
