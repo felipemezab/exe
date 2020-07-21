@@ -6,27 +6,21 @@
     box-sizing: border-box;
 }
 body {
-    font-family: Lora, sans;
-    padding: calc(0.5rem + 3vh)
-        calc(0.5rem + 4vw);
-       padding-top: calc(0.5rem + 3vh); 
-       padding-right: calc(0.5rem + 4vw);
-       padding-bottom: calc(0.5rem + 3vh);
-       padding-left: calc(1rem + 4vw);
-    margin: 0 90px;   
+    font-family: Lora, sans;   
     overflow: auto;
 }
 
 article {
     width: 70%;
     position: relative;
-    max-width: 45em;
-    min-width: 35em;
     padding-bottom: 4em;
+    padding-left: 10%;
 }
 article p {
   font-size: 20px;
   line-height: 29px;
+  max-width: 60%;
+  min-width: 35em;
 }
 span.sidenote__content {
   position: absolute;
@@ -98,6 +92,7 @@ ul.breadcrumb {
     position: absolute;
     padding-top: 2em;
     top: 0;
+    padding-left: 10%;
   }
   
   /* Display list items side by side */
@@ -239,7 +234,7 @@ ul.indice h3 {
   left: 0;
   width: 100%;
   background-color: #eeeeee;
-  height: 3em;
+  height: 2em;
   display: flex;
   z-index: 2;
 }
@@ -247,14 +242,14 @@ ul.indice h3 {
 /* The progress container (grey background) */
 .progress-container {
   width: 100%;
-  height: 12px;
+  height: 8px;
   background: #ccc;
   margin: auto 1em;
 }
 
 /* The progress bar (scroll indicator) */
 .progress-bar {
-  height: 12px;
+  height: 8px;
   background: #d35400;
   width: 0%;
   align-items: center;
@@ -349,8 +344,146 @@ ol.content-content-list {
 
 
 
-@media only screen and (max-widht: 900px) {
-  body {
-    background-color: aqua;
+@media screen and (max-width: 830px) {
+  article p {
+    font-size: 19px;
+    line-height: 30px;
+    width: 100%;
+    min-width: 100%;
+    display: block;
+    position: unset;
+    padding: 0 50px;
+  }
+  article {
+    width: 100vw;
+    padding: 0 10px;
+  }
+  article header h1 {
+    padding: 0 50px;
+  }
+  article .title h6 {
+    padding: 0 50px;
+  }
+  ul.breadcrumb {
+    padding: 30px 60px;
+  }
+  ul.breadcrumb li {
+    font-size: 12px;
+  }
+  .hamburger {
+    position: absolute;
+  }
+  .images {
+    width: 100%;
+  }
+  .images img {
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+  .footer {
+    margin: 2em 0 3em 0;
+    padding-top: 0;
+    align-items: center;
+  }
+  .footer > div {
+    border-radius: 4px;
+    border: none;
+    color: #000;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+
+  /*menú desplegable*/
+
+  .left-panel {
+    background-color: #eaeaea;
+    position: fixed;
+    right: -30em;
+    top: 0;
+    width: 22em; 
+    height: 100%;
+    transition: 0.4s;
+    padding:  3em 3em;
+    z-index: 10;
+    overflow: auto;
+}
+
+  /* Hamburger Line */
+  .menu-wrap .hamburger > div {
+      position: absolute;
+      top: 22px;
+      flex: none;
+      width: 30px;
+      height: 4px;
+      background: #192a56;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.4s ease;
+      z-index: 12;
+      cursor: pointer;
+      border-radius: 3px;
+  }
+    
+    
+  /* Hamburger Lines - Top & Bottom */
+  .menu-wrap .hamburger > div::before,
+  .menu-wrap .hamburger > div::after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: -9px;
+      width: 100%;
+      height: 4px;
+      background: inherit;
+      border-radius: 3px;
+    }
+    /* Moves Line Down */
+  .menu-wrap .hamburger > div::after {
+    top: 9px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  article p {
+    font-size: 16px;
+    line-height: 26px;
+    padding: 0 35px;
+  }
+  article header h1 {
+    font-size: 22px;
+    padding: 0 35px;
+  }
+  .hamburger {
+    top: 20px;
+    right: 10px;
+  }
+  ul.breadcrumb {
+    padding: 30px 45px;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 1px;
+    color: black;
+    content: "/\00a0";
+  }
+  .scroll-indicator {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  article p {
+    padding: 0 10px;
+  }
+  article header h1 {
+    padding: 0 10px;
+  }
+  ul.breadcrumb {
+    display: none;
+  }
+  .hamburger {
+    top: 10px;
+    right: 10px;
   }
 }
