@@ -55,6 +55,9 @@ img {
   max-width: 70%;
   height: 80vh;
 }
+.imagen .vertical {
+  display: none;
+}
 
 /*header de w3*/
 
@@ -119,5 +122,15 @@ img {
     float: none;
     display: block;
     text-align: left;
+  }
+
+}
+
+@media screen and (max-width: 520px) {
+  .imagen .vertical {
+    display: block;
+  }
+  .imagen .horizontal {
+    display: none;
   }
 }

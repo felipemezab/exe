@@ -348,20 +348,23 @@ ol.content-content-list {
   article p {
     font-size: 19px;
     line-height: 30px;
-    width: 100%;
+    width: auto;
     min-width: 100%;
     display: block;
     position: unset;
     padding: 0 50px;
   }
   article {
-    width: 100vw;
+    width: auto;
     padding: 0 10px;
   }
   article header h1 {
     padding: 0 50px;
   }
   article .title h6 {
+    padding: 0 50px;
+  }
+  h5 {
     padding: 0 50px;
   }
   ul.breadcrumb {
@@ -385,6 +388,7 @@ ol.content-content-list {
     margin: 2em 0 3em 0;
     padding-top: 0;
     align-items: center;
+    max-width: 100%;
   }
   .footer > div {
     border-radius: 4px;
@@ -393,6 +397,9 @@ ol.content-content-list {
     text-align: center;
     transition: all 0.5s;
     cursor: pointer;
+    padding: 0;
+    margin: 0;
+    max-width: 70%;
   }
 
   /*menú desplegable*/
@@ -455,6 +462,13 @@ ol.content-content-list {
     font-size: 22px;
     padding: 0 35px;
   }
+  article {
+    width: auto;
+  }
+  h5, h6 {
+    font-size: 22px;
+    padding: 0 35px;
+  }
   .hamburger {
     top: 20px;
     right: 10px;
@@ -485,5 +499,8 @@ ol.content-content-list {
   .hamburger {
     top: 10px;
     right: 10px;
+  }
+  body {
+    max-width: 420px;
   }
 }
